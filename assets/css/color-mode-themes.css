@@ -3,6 +3,7 @@
   --secondary: #a1b1e2;
   --accent: #65af24;
   --neutral: #1f1c31;
+  --other: #2d1c31;
   --background: #3b4754;
   --info: #70addb;
   --success: #31c490;
@@ -17,6 +18,7 @@ html[data-theme='dark'] {
   --secondary: #a1b1e2;
   --accent: #65af24;
   --neutral: #1f1c31;
+  --other: #2d1c31;
   --background: #3b4754;
   --info: #70addb;
   --success: #31c490;
