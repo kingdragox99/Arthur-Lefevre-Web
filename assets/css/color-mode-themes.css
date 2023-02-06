@@ -1,0 +1,27 @@
+:root {
+  --primary: #7db7e0;
+  --secondary: #a1b1e2;
+  --accent: #65af24;
+  --neutral: #1f1c31;
+  --background: #3b4754;
+  --info: #70addb;
+  --success: #31c490;
+  --warning: #bb7a11;
+  --error: #df3a47;
+
+  --text-color: #a1b1e2;
+}
+
+html[data-theme='dark'] {
+  --primary: #7db7e0;
+  --secondary: #a1b1e2;
+  --accent: #65af24;
+  --neutral: #1f1c31;
+  --background: #3b4754;
+  --info: #70addb;
+  --success: #31c490;
+  --warning: #bb7a11;
+  --error: #df3a47;
+
+  --text-color: #a1b1e2;
+}

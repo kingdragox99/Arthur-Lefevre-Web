@@ -1,0 +1,10 @@
+body {
+  background-color: var(--neutral);
+  color: var(--text-color);
+}
+
+.linkhover:hover {
+  color: #7db7e0;
+  font-weight: bolder;
+  text-decoration: underline #7db7e0;
+}

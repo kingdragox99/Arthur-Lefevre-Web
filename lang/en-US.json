@@ -1,0 +1,18 @@
+{
+  "pages": {
+    "home": {
+      "title": "Build your own website \nusing our expertise",
+      "titleKit": "Kits features",
+      "desc1": "Nuxt 3 Tailwind css starter kit, ",
+      "desc2": "used by the best",
+      "btnCounter": "Oh look ! a counter : "
+    }
+  },
+  "buttons": {
+    "ok": "Ok",
+    "no": "no",
+    "yes": "yes",
+    "cancel": "cancel",
+    "next": "next"
+  }
+}
