@@ -3,15 +3,24 @@ footer.px-4.py-4
   nav.w-full.mb-4
     ul.flex.justify-evenly
       li
-        a.linkhover(href='https://github.com/kingdragox99' target='_blank')
+        a.linkhover(
+          href='https://github.com/kingdragox99'
+          target='_blank'
+          aria-label='github account'
+        )
           Icon(name='mdi:github-box' size='2.5rem')
       li
-        a.linkhover(href='https://twitter.com/ArthurLDev' target='_blank')
+        a.linkhover(
+          href='https://twitter.com/ArthurLDev'
+          target='_blank'
+          aria-label='twitter account'
+        )
           Icon(name='mdi:twitter-box' size='2.5rem')
       li
         a.linkhover(
           href='https://www.linkedin.com/in/arthur-lefevre/'
           target='_blank'
+          aria-label='linkedin account'
         )
           Icon(name='mdi:linkedin' size='2.5rem')
   h2.text-center.font-bold.text-primary.font-inco Designed & Built by Arthur Lefevre
