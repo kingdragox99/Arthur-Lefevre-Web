@@ -64,6 +64,7 @@ export default defineNuxtConfig({
           property: 'twitter:image',
           content: 'https://i.imgur.com/5741C19.png',
         },
+        { name: 'twitter:site', content: '@ArthurLDev' },
         {
           hid: 'twitter:card',
           property: 'twitter:card',
