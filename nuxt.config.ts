@@ -15,13 +15,13 @@ export default defineNuxtConfig({
           hid: 'description',
           name: 'description',
           content:
-            "Bonjour, je m'appelle Arthur Lefevre, je suis un développeur web junior originaire de Belgique. J'ai suivi une formation chez Becode.org pour affiner mes compétences. J'ai de l'expertise dans le développement front-end, j'utilise Vue.js. J'ai une bonne compréhension de HTML, CSS et JavaScript. Je suis passionné par la création d'applications web interactives et user-friendly.",
+            "Hello, I'm Arthur Lefevre, a junior web developer from Belgium. I completed a training course at Becode.org to hone my skills. My expertise lies in front-end development, using Vue.js. I have a strong understanding of HTML, CSS and JavaScript. I'm passionate about creating interactive and user-friendly web applications.",
         },
         {
           hid: 'og:description',
           property: 'og:description',
           content:
-            "Bonjour, je m'appelle Arthur Lefevre, je suis un développeur web junior originaire de Belgique. J'ai suivi une formation chez Becode.org pour affiner mes compétences. J'ai de l'expertise dans le développement front-end, j'utilise Vue.js. J'ai une bonne compréhension de HTML, CSS et JavaScript. Je suis passionné par la création d'applications web interactives et user-friendly.",
+            "Hello, I'm Arthur Lefevre, a junior web developer from Belgium. I completed a training course at Becode.org to hone my skills. My expertise lies in front-end development, using Vue.js. I have a strong understanding of HTML, CSS and JavaScript. I'm passionate about creating interactive and user-friendly web applications.",
         },
         {
           hid: 'og:image',
