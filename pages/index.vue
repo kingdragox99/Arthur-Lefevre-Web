@@ -55,7 +55,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
           p Git & Github
     picture.flex.justify-center.items-center.md_w-1of3
       img.rounded-3xl.w-52.h-52.xl_w-72.xl_h-72(
-        src='/assets/img/me.jpg'
+        src='@@/assets/img/me.jpg'
         alt='me'
         width='500'
         height='500'
@@ -122,7 +122,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
       #project1.carousel-item.relative.w-full.flex.flex-col
         figure.bg-white.rounded-t-3xl.flex.justify-center
           img.h-64.w-64(
-            src='/assets/img/verdin.png'
+            src='@@/assets/img/verdin.png'
             alt='verdin.be'
             width='500'
             height='500'
@@ -163,7 +163,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
       #project2.carousel-item.relative.w-full.flex.flex-col
         figure.bg-white.rounded-t-3xl.flex.justify-center
           img.h-64.w-64(
-            src='/assets/img/jh.png'
+            src='@@/assets/img/jh.png'
             alt='Joyce Huberty'
             width='500'
             height='500'
@@ -204,7 +204,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
       #project3.carousel-item.relative.w-full.flex.flex-col
         figure.bg-white.rounded-t-3xl.flex.justify-center
           img.h-64.w-64(
-            src='/assets/img/BOTDS.png'
+            src='@@/assets/img/BOTDS.png'
             alt='Vac Ban Checker'
             width='500'
             height='500'
@@ -259,7 +259,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
     .flex.flex-col.w-full.border-opacity-50
       .grid.grid-cols-2.card.place-items-center.mb-2.xl_grid-cols-4
         img.w-32.lg_w-64.xl_col-start-2(
-          src='/assets/img/malt.png'
+          src='@@/assets/img/malt.png'
           alt='malt.com'
           height='400'
           width='400'

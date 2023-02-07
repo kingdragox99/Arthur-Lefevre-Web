@@ -1,4 +1,6 @@
 import svgLoader from 'vite-svg-loader';
+import wasm from 'vite-plugin-wasm';
+import topLevelAwait from 'vite-plugin-top-level-await';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -47,14 +49,13 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/robots',
-    // '@nuxtjs/i18n',
+    '@nuxtjs/i18n',
+    '@nuxt/content',
     '@pinia/nuxt',
     '@vueuse/nuxt',
     'nuxt-icon',
+    'nuxt-simple-sitemap',
   ],
-
-  loading: { color: 'var(--primary)' },
 
   // vite config https://v3.nuxtjs.org/api/configuration/nuxt-config#vite
   vite: {
