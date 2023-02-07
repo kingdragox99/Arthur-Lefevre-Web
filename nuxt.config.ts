@@ -64,6 +64,8 @@ export default defineNuxtConfig({
         svgo: false,
         defaultImport: 'component',
       }),
+      wasm(),
+      topLevelAwait(),
     ],
   },
 
@@ -101,6 +103,23 @@ export default defineNuxtConfig({
     preference: 'system', // default theme
     dataValue: 'theme', // activate data-theme in <html> tag
     classSuffix: '',
+  },
+
+  build: {
+    transpile: ['@headlessui/vue'],
+  },
+
+  // https://nitro.unjs.io/config
+  nitro: {
+    minify: true,
+    compressPublicAssets: true,
+    prerender: {
+      crawlLinks: true,
+      routes: ['/en'],
+    },
+  },
+  sitemap: {
+    hostname: 'https://www.arthur-lefevre.dev',
   },
 
   // Config Google Font https://google-fonts.nuxtjs.org

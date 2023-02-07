@@ -18,7 +18,9 @@
     "lint:style:fix": "stylelint **/*.{vue,css} --ignore-path .gitignore --fix",
     "lint": "yarn lint:ts && yarn lint:style",
     "lint:fix": "yarn lint:ts:fix && yarn lint:style:fix",
-    "postinstall": "patch-package && husky install && nuxt prepare"
+    "postinstall": "patch-package && husky install && nuxt prepare",
+    "start": "nuxt start",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",

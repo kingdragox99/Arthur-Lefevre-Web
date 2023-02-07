@@ -72,8 +72,8 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
         ul
           li.flex.mb-4.xl_text-xl
             Icon.text-primary(name='ic:baseline-arrow-right' size='1.5rem')
-            p.w-4of5 
-              | I did a 3 months internship at
+            p.w-4of5 I did a 3 months internship at
+              |
               |
               a.text-primary.underline.linkhover(
                 href='https://www.altab.be/'
@@ -100,7 +100,8 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
         ul
           li.flex.mb-4.xl_text-xl
             Icon.text-primary(name='ic:baseline-arrow-right' size='1.5rem')
-            p.w-4of5 
+            p.w-4of5
+              |
               | I followed the web development training of
               |
               a.text-primary.underline.linkhover(

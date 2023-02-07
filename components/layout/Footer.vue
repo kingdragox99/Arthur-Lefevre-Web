@@ -1,7 +1,7 @@
 <template lang="pug">
 footer.px-4.py-4
   nav.w-full.mb-4
-    ul.flex.justify-evenly
+    ul.flex.justify-evenly.md_w-96
       li
         a.linkhover(
           href='https://github.com/kingdragox99'
