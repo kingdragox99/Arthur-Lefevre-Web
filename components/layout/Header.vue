@@ -1,5 +1,5 @@
 <template lang="pug">
-header.flex.flex-col.items-center.px-4.py-4.md_text-xl
+header.font-inco.bg-background.flex.flex-col.items-center.px-4.py-4.md_text-xl
   a.flex.justify-center(href='#about' aria-label='go to about')
     Logo.w-64.mb-3.fill-white
   nav.w-full.md_w-96
@@ -14,6 +14,6 @@ header.flex.flex-col.items-center.px-4.py-4.md_text-xl
         a.linkhover.m-2(href='#contact' aria-label='go to contact') Contact
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import Logo from '@@/assets/svg/logo-w.svg';
 </script>

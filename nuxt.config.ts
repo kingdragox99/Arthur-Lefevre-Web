@@ -17,6 +17,7 @@ export default defineNuxtConfig({
           content: 'Arthur LEFEVRE Fullstack web dev',
         },
       ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       htmlAttrs: {
         lang: 'en',
       },
@@ -70,31 +71,30 @@ export default defineNuxtConfig({
   },
 
   // Config I18n https://v8.i18n.nuxtjs.org
-  // TODO : lazy load doesn't work
   i18n: {
-    langDir: 'lang/',
+    strategy: 'no_prefix',
+    defaultLocale: 'en-US',
     lazy: true,
-    baseUrl: 'http://localhost:3000',
+    langDir: 'lang',
     locales: [
       {
-        code: 'en',
-        iso: 'en-US',
+        code: 'en-US',
         file: 'en-US.json',
         name: 'English',
+        iso: 'us',
+        flag: 'flagpack:us',
       },
       {
-        code: 'fr',
-        iso: 'fr-FR',
+        code: 'fr-FR',
         file: 'fr-FR.json',
         name: 'Français',
+        iso: 'fr',
+        flag: 'flagpack:fr',
       },
     ],
-    defaultLocale: 'en',
-    strategy: 'prefix_except_default',
-    detectBrowserLanguage: false,
     vueI18n: {
       legacy: false,
-      locale: 'en',
+      fallbackLocale: 'en-US',
     },
   },
 

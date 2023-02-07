@@ -1,15 +1,14 @@
 <template lang="pug">
-Header.font-inco.bg-background
+Header
 main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
   section#about.h-auto.w-full.mb-8.flex.flex-col.md_flex-row.justify-center.md_gap-10
     .w-full.md_w-2of3
-      h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl About Me.
+      h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl {{ $t('pages.home.about.title') }}
       p.mb-8.xl_text-xl
-        | Hello, I'm
+        | {{ $t('pages.home.about.desc_1') }}
         |
         span.text-primary.underline Arthur Lefevre
-        | , a junior web developer from Belgium.
-        | I completed a training course at
+        | {{ $t('pages.home.about.desc_2') }}
         |
         a.text-primary.underline.linkhover(
           href='https://becode.org/'
@@ -17,17 +16,15 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
           aria-label='go to becode.org'
         ) Becode.org
         |
-        | to hone my skills.
-        | My expertise lies in front-end development, using
+        | {{ $t('pages.home.about.desc_3') }}
         |
         a.text-primary.underline.linkhover(
           href='https://vuejs.org/'
           target='_blank'
           aria-label='go to vuejs.org'
-        ) Vue.js framework.
+        ) Vue.js.
         |
-        | I have a strong understanding of HTML, CSS and JavaScript.
-        | I'm passionate about creating interactive and user-friendly web applications.
+        | {{ $t('pages.home.about.desc_4') }}
       ul.grid.grid-cols-2.mb-8.xl_text-xl
         li.flex.items-center
           Icon.text-primary(name='ic:baseline-arrow-right')
@@ -61,18 +58,18 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
         height='500'
       )
   section#experience.h-auto.w-full
-    h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl Experience
+    h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl {{ $t('pages.home.experience.title') }}
     .carousel.w-full
       #experience1.carousel-item.relative.w-full.flex.flex-col
         p.font-inco.text-primary.font-bold.text-lg.xl_text-2xl
-          | Internship
+          | {{ $t('pages.home.experience.internship') }}
           |
           span.font-noto.font-bold.text-secondary @ Altab
-        p.font-inco.text-sm.mb-4.xl_text-lg December 2022 - February 2023
+        p.font-inco.text-sm.mb-4.xl_text-lg {{ $t('pages.home.experience.date_1') }}
         ul
           li.flex.mb-4.xl_text-xl
             Icon.text-primary(name='ic:baseline-arrow-right' size='1.5rem')
-            p.w-4of5 I did a 3 months internship at
+            p.w-4of5 {{ $t('pages.home.experience.desc_1') }}
               |
               |
               a.text-primary.underline.linkhover(
@@ -80,7 +77,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
                 target='_blank'
                 aria-label='go to altab.be'
               ) Altab
-              | , it's a web development company, during this internship I did the front-end integration of the new website of
+              | {{ $t('pages.home.experience.desc_2') }}
               |
               a.text-primary.underline.linkhover(
                 href='https://www.verdin.be/'
@@ -89,36 +86,36 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               ) Verdin.be
           li.flex.mb-4.xl_text-xl
             Icon.text-primary(name='ic:baseline-arrow-right' size='1.5rem')
-            p.w-4of5 I learned to use Nuxt.js, i18n, Vuelidate, Pugjs
+            p.w-4of5 {{ $t('pages.home.experience.desc_3') }}
 
       #experience2.carousel-item.relative.w-full.flex.flex-col
         p.font-inco.text-primary.font-bold.text-lg.xl_text-2xl
-          | Internship
+          | {{ $t('pages.home.experience.internship') }}
           |
           span.font-noto.font-bold.text-secondary @ Becode.org
-        p.font-inco.text-sm.mb-4.xl_text-lg May 2022 - December 2022
+        p.font-inco.text-sm.mb-4.xl_text-lg {{ $t('pages.home.experience.date_2') }}
         ul
           li.flex.mb-4.xl_text-xl
             Icon.text-primary(name='ic:baseline-arrow-right' size='1.5rem')
             p.w-4of5
               |
-              | I followed the web development training of
+              | {{ $t('pages.home.experience.desc_4') }}
               |
               a.text-primary.underline.linkhover(
                 href='https://becode.org/'
                 target='_blank'
                 aria-label='go to becode.org'
               ) Becode.org
-              | , this training lasts 7 months and its goal is to teach us the basics of web development, with a learning pedagogue called "Active Methodology": learn by doing
+              | {{ $t('pages.home.experience.desc_5') }}
           li.flex.mb-4.xl_text-xl
             Icon.text-primary(name='ic:baseline-arrow-right' size='1.5rem')
-            p.w-4of5 I learned to use HTML, CSS, Javascript, Vue.js, Node.js, MongoDB, Tailwind
+            p.w-4of5 {{ $t('pages.home.experience.desc_6') }}
   .flex.w-full.py-2.gap-2.mb-8
     a.btn.btn-sm.xl_btn(href='#experience1' aria-label='go to experience1') Altab
     a.btn.btn-sm.xl_btn(href='#experience2' aria-label='go to experience2') Becode
 
   section#projects.h-auto.w-full.mb-8
-    h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl Projects
+    h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl {{ $t('pages.home.projects.title') }}
     .carousel.space-x-4.w-full
       #project1.carousel-item.relative.w-full.flex.flex-col
         figure.bg-white.rounded-t-3xl.flex.justify-center
@@ -134,7 +131,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             target='_blank'
             aria-label='go to verdin.be'
           ) Verdin.be
-          p.xl_text-lg Verdin.be is an accounting company, I did the front-end integration on this project.
+          p.xl_text-lg {{ $t('pages.home.projects.verdin') }}
           .flex.gap-2.text-white
             a.flex.group.gap-1.xl_text-lg(
               href='https://www.verdin.be/'
@@ -142,9 +139,10 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               aria-label='go to verdin.be'
             )
               Icon.group-hover_text-primary(name='mdi:web-box' size='1.5rem')
-              p.group-hover_text-primary.hover_underline Website
+              p.group-hover_text-primary.hover_underline {{ $t('pages.home.projects.website') }}
           .card-actions.justify-start
             .badge.badge-outline Nuxt.js
+            .badge.badge-outline TypeScript
             .badge.badge-outline Tailwind
             .badge.badge-outline i18n
             .badge.badge-outline Vuelidate
@@ -175,7 +173,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             target='_blank'
             aria-label='go to JoyceHuberty.be'
           ) Joyce Huberty portfolio
-          p.xl_text-lg Joyce Huberty is an artist, I created the back-end, front-end and design on this project, this site is no longer maintained or updated
+          p.xl_text-lg {{ $t('pages.home.projects.jh') }}
           .flex.gap-2.text-white
             a.flex.group.gap-1.xl_text-lg(
               href='http://5.196.7.243:3000/'
@@ -183,7 +181,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               aria-label='go to JoyceHuberty.be'
             )
               Icon.group-hover_text-primary(name='mdi:web-box' size='1.5rem')
-              p.group-hover_text-primary.hover_underline Website
+              p.group-hover_text-primary.hover_underline {{ $t('pages.home.projects.website') }}
           .card-actions.justify-start
             .badge.badge-outline Vue.js
             .badge.badge-outline MongoDB
@@ -216,7 +214,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             target='_blank'
             aria-label='go to github repo'
           ) Vac Ban Checker Discord Bot
-          p.xl_text-lg I created a bot discord, which checks if a player of "Counter-Strike: Global Offensive" suspected of cheating has received a ban by the anti-cheat, it sends a notification when a player receives one, I created the Bot from A to Z
+          p.xl_text-lg {{ $t('pages.home.projects.vbc') }}
           .flex.gap-2.text-white
             a.flex.group.gap-1(
               href='https://github.com/kingdragox99/Steam-Ban-Checker-Discord-Bot'
@@ -224,7 +222,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               aria-label='go to github repo'
             )
               Icon.group-hover_text-primary(name='mdi:web-box' size='1.5rem')
-              p.group-hover_text-primary.hover_underline.xl_text-lg Website
+              p.group-hover_text-primary.hover_underline.xl_text-lg {{ $t('pages.home.projects.website') }}
             a.flex.group.gap-1(
               href='https://github.com/kingdragox99/Steam-Ban-Checker-Discord-Bot'
               target='_blank'
@@ -255,8 +253,8 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             Icon.text-primary(name='ic:outline-arrow-forward-ios' size='1rem')
 
   section#contact.h-auto.w-full.mb-8
-    h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl Contact
-    p.mb-4.xl_text-xl If you have a question or a project you can contact me via email or directly on malt.com
+    h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl {{ $t('pages.home.contact.title') }}
+    p.mb-4.xl_text-xl {{ $t('pages.home.contact.desc') }}
     .flex.flex-col.w-full.border-opacity-50
       .grid.grid-cols-2.card.place-items-center.mb-2.xl_grid-cols-4
         img.w-32.lg_w-64.xl_col-start-2(
@@ -269,7 +267,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
           href='https://www.malt.fr/profile/arthurlefevre1'
           target='_blank'
           aria-label='go to malt.com'
-        ) Send me a mission
+        ) {{ $t('pages.home.contact.btn_1') }}
       .grid.card
         a.btn.lg_btn.xl_text-xl(
           href='mailto:arthur.lefevre.dev@gmail.com'
