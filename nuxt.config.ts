@@ -14,7 +14,34 @@ export default defineNuxtConfig({
         {
           hid: 'description',
           name: 'description',
-          content: 'Arthur LEFEVRE Fullstack web dev',
+          content:
+            "Bonjour, je m'appelle Arthur Lefevre, je suis un développeur web junior originaire de Belgique. J'ai suivi une formation chez Becode.org pour affiner mes compétences. J'ai de l'expertise dans le développement front-end, j'utilise Vue.js. J'ai une bonne compréhension de HTML, CSS et JavaScript. Je suis passionné par la création d'applications web interactives et user-friendly.",
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            "Bonjour, je m'appelle Arthur Lefevre, je suis un développeur web junior originaire de Belgique. J'ai suivi une formation chez Becode.org pour affiner mes compétences. J'ai de l'expertise dans le développement front-end, j'utilise Vue.js. J'ai une bonne compréhension de HTML, CSS et JavaScript. Je suis passionné par la création d'applications web interactives et user-friendly.",
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://i.imgur.com/5741C19.png',
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://i.imgur.com/5741C19.png',
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website',
+        },
+        {
+          hid: 'twitter:card',
+          property: 'twitter:card',
+          content: 'summary_large_image',
         },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
