@@ -32,6 +32,13 @@
         "desc": "If you have a question or a project you can contact me via email or directly on malt.com",
         "btn_1": "Send me a mission"
       }
-    }
+    },
+    "header": {
+      "about": "About",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "footer": { "desc": "Designed & Built by Arthur Lefevre" }
   }
 }

@@ -23,7 +23,7 @@ footer.px-4.py-4
           aria-label='linkedin account'
         )
           Icon(name='mdi:linkedin' size='2.5rem')
-  h2.text-center.font-bold.text-primary.font-inco Designed & Built by Arthur Lefevre
+  h2.text-center.font-bold.text-primary.font-inco {{ $t('pages.footer.desc') }}
 </template>
 
 <script lang="ts" setup></script>
