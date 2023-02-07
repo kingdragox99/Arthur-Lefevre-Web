@@ -2,7 +2,7 @@
   "pages": {
     "home": {
       "about": {
-        "title": "A propos de moi.",
+        "title": "À propos de moi.",
         "desc_1": "Bonjour, je m'appelle",
         "desc_2": ", je suis un développeur web junior originaire de Belgique. J'ai suivi une formation chez",
         "desc_3": "pour affiner mes compétences. J'ai de l'expertise dans le développement front-end, j'utilise",
@@ -34,7 +34,7 @@
       }
     },
     "header": {
-      "about": "A propos",
+      "about": "À propos",
       "experience": "Expérience",
       "projects": "Projets",
       "contact": "Contacte"
