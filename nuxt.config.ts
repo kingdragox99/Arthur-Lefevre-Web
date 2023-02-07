@@ -18,6 +18,21 @@ export default defineNuxtConfig({
             "Hello, I'm Arthur Lefevre, a junior web developer from Belgium. I completed a training course at Becode.org to hone my skills. My expertise lies in front-end development, using Vue.js. I have a strong understanding of HTML, CSS and JavaScript. I'm passionate about creating interactive and user-friendly web applications.",
         },
         {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website',
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://arthur-lefevre.dev/',
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Arthur Lefevre',
+        },
+        {
           hid: 'og:description',
           property: 'og:description',
           content:
@@ -29,14 +44,25 @@ export default defineNuxtConfig({
           content: 'https://i.imgur.com/5741C19.png',
         },
         {
+          hid: 'twitter:url',
+          property: 'twitter:url',
+          content: 'https://arthur-lefevre.dev/',
+        },
+        {
+          hid: 'twitter:title',
+          property: 'twitter:title',
+          content: 'Arthur Lefevre',
+        },
+        {
+          hid: 'twitter:description',
+          property: 'twitter:description',
+          content:
+            "Hello, I'm Arthur Lefevre, a junior web developer from Belgium. I completed a training course at Becode.org to hone my skills. My expertise lies in front-end development, using Vue.js. I have a strong understanding of HTML, CSS and JavaScript. I'm passionate about creating interactive and user-friendly web applications.",
+        },
+        {
           hid: 'twitter:image',
           property: 'twitter:image',
           content: 'https://i.imgur.com/5741C19.png',
-        },
-        {
-          hid: 'og:type',
-          property: 'og:type',
-          content: 'website',
         },
         {
           hid: 'twitter:card',
