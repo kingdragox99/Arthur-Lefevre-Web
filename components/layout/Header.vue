@@ -10,13 +10,13 @@ header.flex.flex-col.items-center.px-4.py-4.md_text-xl
   nav.w-full.md_w-96
     ul.flex.justify-around
       li
-        a.linkhover(href='#about' aria-label='go to about') About
+        a.linkhover.m-2(href='#about' aria-label='go to about') About
       li
-        a.linkhover(href='#experience' aria-label='go to experience') Experience
+        a.linkhover.m-2(href='#experience' aria-label='go to experience') Experience
       li
-        a.linkhover(href='#projects' aria-label='go to projects') Projects
+        a.linkhover.m-2(href='#projects' aria-label='go to projects') Projects
       li
-        a.linkhover(href='#contact' aria-label='go to contact') Contact
+        a.linkhover.m-2(href='#contact' aria-label='go to contact') Contact
 </template>
 
 <script lang="ts" setup></script>

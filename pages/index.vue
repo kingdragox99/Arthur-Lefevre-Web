@@ -141,7 +141,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               aria-label='go to verdin.be'
             )
               Icon.group-hover_text-primary(name='mdi:web-box' size='1.5rem')
-              h3.group-hover_text-primary.hover_underline Website
+              p.group-hover_text-primary.hover_underline Website
           .card-actions.justify-start
             .badge.badge-outline Nuxt.js
             .badge.badge-outline Tailwind
@@ -182,7 +182,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               aria-label='go to JoyceHuberty.be'
             )
               Icon.group-hover_text-primary(name='mdi:web-box' size='1.5rem')
-              h3.group-hover_text-primary.hover_underline Website
+              p.group-hover_text-primary.hover_underline Website
           .card-actions.justify-start
             .badge.badge-outline Vue.js
             .badge.badge-outline MongoDB
@@ -223,7 +223,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               aria-label='go to github repo'
             )
               Icon.group-hover_text-primary(name='mdi:web-box' size='1.5rem')
-              h3.group-hover_text-primary.hover_underline.xl_text-lg Website
+              p.group-hover_text-primary.hover_underline.xl_text-lg Website
             a.flex.group.gap-1(
               href='https://github.com/kingdragox99/Steam-Ban-Checker-Discord-Bot'
               target='_blank'
@@ -233,7 +233,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
                 name='mdi:github-box'
                 size='1.5rem'
               )
-              h3.group-hover_text-primary.hover_underline.xl_text-lg Github
+              p.group-hover_text-primary.hover_underline.xl_text-lg Github
           .card-actions.justify-start
             .badge.badge-outline Discord.js
             .badge.badge-outline Cheerio.js
