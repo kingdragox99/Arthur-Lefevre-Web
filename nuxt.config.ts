@@ -76,6 +76,10 @@ export default defineNuxtConfig({
         lang: 'en',
       },
     },
+    // pageTransition: {
+    //   name: 'page',
+    //   mode: 'out-in',
+    // },
   },
 
   // https://v3.nuxtjs.org/api/configuration/nuxt.config#components
@@ -126,20 +130,20 @@ export default defineNuxtConfig({
 
   // Config I18n https://v8.i18n.nuxtjs.org
   i18n: {
-    strategy: 'no_prefix',
-    defaultLocale: 'en-US',
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
     lazy: true,
     langDir: 'lang',
     locales: [
       {
-        code: 'en-US',
+        code: 'en',
         file: 'en-US.json',
         name: 'English',
         iso: 'us',
         flag: 'flagpack:us',
       },
       {
-        code: 'fr-FR',
+        code: 'fr',
         file: 'fr-FR.json',
         name: 'Français',
         iso: 'fr',
@@ -148,13 +152,13 @@ export default defineNuxtConfig({
     ],
     vueI18n: {
       legacy: false,
-      fallbackLocale: 'en-US',
+      fallbackLocale: 'en',
     },
   },
 
   // Config Color Mode https://color-mode.nuxtjs.org/
   colorMode: {
-    preference: 'system', // default theme
+    preference: 'dark', // default theme
     dataValue: 'theme', // activate data-theme in <html> tag
     classSuffix: '',
   },

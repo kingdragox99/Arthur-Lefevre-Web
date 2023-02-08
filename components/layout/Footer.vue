@@ -3,21 +3,21 @@ footer.px-4.py-4
   nav.w-full.mb-4.flex.justify-center
     ul.flex.justify-evenly.md_w-96
       li
-        a.linkhover(
+        a.hover_text-primary(
           href='https://github.com/kingdragox99'
           target='_blank'
           aria-label='github account'
         )
           Icon(name='mdi:github-box' size='2.5rem')
       li
-        a.linkhover(
+        a.hover_text-primary(
           href='https://twitter.com/ArthurLDev'
           target='_blank'
           aria-label='twitter account'
         )
           Icon(name='mdi:twitter-box' size='2.5rem')
       li
-        a.linkhover(
+        a.hover_text-primary(
           href='https://www.linkedin.com/in/arthur-lefevre/'
           target='_blank'
           aria-label='linkedin account'

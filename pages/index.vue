@@ -10,7 +10,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
         span.text-primary.underline Arthur Lefevre
         | {{ $t('pages.home.about.desc_2') }}
         |
-        a.text-primary.underline.linkhover(
+        a.text-primary.underline.hover_text-secondary(
           href='https://becode.org/'
           target='_blank'
           aria-label='go to becode.org'
@@ -18,7 +18,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
         |
         | {{ $t('pages.home.about.desc_3') }}
         |
-        a.text-primary.underline.linkhover(
+        a.text-primary.underline.hover_text-secondary(
           href='https://vuejs.org/'
           target='_blank'
           aria-label='go to vuejs.org'
@@ -72,14 +72,14 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             p.w-4of5 {{ $t('pages.home.experience.desc_1') }}
               |
               |
-              a.text-primary.underline.linkhover(
+              a.text-primary.underline.hover_text-secondary(
                 href='https://www.altab.be/'
                 target='_blank'
                 aria-label='go to altab.be'
               ) Altab
               | {{ $t('pages.home.experience.desc_2') }}
               |
-              a.text-primary.underline.linkhover(
+              a.text-primary.underline.hover_text-secondary(
                 href='https://www.verdin.be/'
                 target='_blank'
                 aria-label='go to verdin.be'
@@ -101,7 +101,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               |
               | {{ $t('pages.home.experience.desc_4') }}
               |
-              a.text-primary.underline.linkhover(
+              a.text-primary.underline.hover_text-secondary(
                 href='https://becode.org/'
                 target='_blank'
                 aria-label='go to becode.org'
@@ -126,7 +126,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             height='500'
           )
         .card-body.bg-background.rounded-b-3xl
-          a.card-title.font-inco.font-bold.text-xl.text-primary.linkhover.xl_text-3xl(
+          a.card-title.font-inco.font-bold.text-xl.text-primary.hover_text-primary.xl_text-3xl(
             href='https://www.verdin.be/'
             target='_blank'
             aria-label='go to verdin.be'
@@ -138,8 +138,11 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               target='_blank'
               aria-label='go to verdin.be'
             )
-              Icon.group-hover_text-primary(name='mdi:web-box' size='1.5rem')
-              p.group-hover_text-primary.hover_underline {{ $t('pages.home.projects.website') }}
+              Icon.text-primary.group-hover_text-secondary(
+                name='mdi:web-box'
+                size='1.5rem'
+              )
+              p.text-primary.group-hover_text-secondary.hover_underline {{ $t('pages.home.projects.website') }}
           .card-actions.justify-start
             .badge.badge-outline Nuxt.js
             .badge.badge-outline TypeScript
@@ -168,7 +171,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             height='500'
           )
         .card-body.bg-background.rounded-b-3xl
-          a.card-title.font-inco.font-bold.text-xl.text-primary.linkhover.xl_text-3xl(
+          a.card-title.font-inco.font-bold.text-xl.text-primary.hover_text-primary.xl_text-3xl(
             href='http://5.196.7.243:3000/'
             target='_blank'
             aria-label='go to JoyceHuberty.be'
@@ -180,8 +183,11 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               target='_blank'
               aria-label='go to JoyceHuberty.be'
             )
-              Icon.group-hover_text-primary(name='mdi:web-box' size='1.5rem')
-              p.group-hover_text-primary.hover_underline {{ $t('pages.home.projects.website') }}
+              Icon.text-primary.group-hover_text-secondary(
+                name='mdi:web-box'
+                size='1.5rem'
+              )
+              p.text-primary.group-hover_text-secondary.hover_underline {{ $t('pages.home.projects.website') }}
           .card-actions.justify-start
             .badge.badge-outline Vue.js
             .badge.badge-outline MongoDB
@@ -209,7 +215,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             height='500'
           )
         .card-body.bg-background.rounded-b-3xl
-          a.card-title.font-inco.font-bold.text-xl.text-primary.linkhover.xl_text-3xl(
+          a.card-title.font-inco.font-bold.text-xl.text-primary.hover_text-primary.xl_text-3xl(
             href='https://github.com/kingdragox99/Steam-Ban-Checker-Discord-Bot'
             target='_blank'
             aria-label='go to github repo'
@@ -221,18 +227,21 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
               target='_blank'
               aria-label='go to github repo'
             )
-              Icon.group-hover_text-primary(name='mdi:web-box' size='1.5rem')
-              p.group-hover_text-primary.hover_underline.xl_text-lg {{ $t('pages.home.projects.website') }}
+              Icon.text-primary.group-hover_text-secondary(
+                name='mdi:web-box'
+                size='1.5rem'
+              )
+              p.text-primary.group-hover_text-secondary.hover_underline.xl_text-lg {{ $t('pages.home.projects.website') }}
             a.flex.group.gap-1(
               href='https://github.com/kingdragox99/Steam-Ban-Checker-Discord-Bot'
               target='_blank'
               aria-label='go to github repo'
             )
-              Icon.group-hover_text-primary(
+              Icon.text-primary.group-hover_text-secondary(
                 name='mdi:github-box'
                 size='1.5rem'
               )
-              p.group-hover_text-primary.hover_underline.xl_text-lg Github
+              p.text-primary.group-hover_text-secondary.hover_underline.xl_text-lg Github
           .card-actions.justify-start
             .badge.badge-outline Discord.js
             .badge.badge-outline Cheerio.js
@@ -277,3 +286,5 @@ Footer.font-inco.bg-background
 </template>
 
 <script setup lang="ts"></script>
+
+<style scoped></style>

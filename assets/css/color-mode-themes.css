@@ -1,16 +1,16 @@
 :root {
-  --primary: #7db7e0;
-  --secondary: #a1b1e2;
+  --primary: #FF4000;
+  --secondary: #50B2C0;
   --accent: #65af24;
-  --neutral: #1f1c31;
+  --neutral: #FEEFDD;
   --other: #2d1c31;
-  --background: #3b4754;
+  --background: #FAAA8D;
   --info: #70addb;
   --success: #31c490;
   --warning: #bb7a11;
   --error: #df3a47;
 
-  --text-color: #a1b1e2;
+  --text-color: #201E1F;
 }
 
 html[data-theme='dark'] {
