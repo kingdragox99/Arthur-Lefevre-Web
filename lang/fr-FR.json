@@ -28,7 +28,7 @@
         "vbc": "J'ai créé un bot discord, qui vérifie si un joueur de \"Counter-Strike : Global Offensive\" soupçonné de tricherie a reçu un ban par l'anti-cheat, il envoie une notification quand un joueur en reçoit un, j'ai créé le Bot de A à Z."
       },
       "contact": {
-        "title": "Contacte",
+        "title": "Contact",
         "desc": "Si vous avez une question ou un projet vous pouvez me contacter par email ou directement sur malt.com",
         "btn_1": "Envoyez-moi une mission"
       }
@@ -37,7 +37,7 @@
       "about": "À propos",
       "experience": "Expérience",
       "projects": "Projets",
-      "contact": "Contacte"
+      "contact": "Contact"
     },
     "footer": { "desc": "Conception & développement par Arthur Lefevre" }
   }

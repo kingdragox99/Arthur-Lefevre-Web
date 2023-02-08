@@ -1,13 +1,15 @@
 <template lang="pug">
-header.font-inco.bg-background.flex.flex-col.items-center.px-4.py-4.md_text-xl
+header.font-inco.bg-other.flex.flex-col.items-center.px-4.py-4.md_text-xl
   .flex.justify-between.items-center.mb-3.w-full.lg_w-1of2.xl_w-1of3
-    label.swap.swap-rotate.w-14.md_w-28
-      input(type='checkbox' @click='toggleTheme')
+    label.swap.swap-rotate.w-14.hover_text-primary.md_w-28(for='mode')
+      input#mode(type='checkbox' @click='toggleTheme' aria-label='Change mode')
       IconMoon.swap-off.w-6
       IconSun.swap-on.w-6
-    Logo.w-1of2.fill-white.md_w-1of2
+    Logo.w-1of2.fill-logo.md_w-1of2
     .dropdown.dropdown-end.w-14.md_w-28
-      label.btn.border-none.flex.justify-center.items-center(tabindex='0')
+      label.btn.border-none.flex.justify-center.items-center.hover_text-primary(
+        tabindex='0'
+      )
         Icon(name='majesticons:translate' size='1.5rem')
       ul.dropdown-content.menu.p-2.shadow.bg-neutral.rounded-box.w-52(
         tabindex='0'

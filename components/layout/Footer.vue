@@ -1,7 +1,7 @@
 <template lang="pug">
 footer.px-4.py-4
   nav.w-full.mb-4.flex.justify-center
-    ul.flex.justify-evenly.md_w-96
+    ul.w-full.flex.justify-evenly.md_w-96
       li
         a.hover_text-primary(
           href='https://github.com/kingdragox99'

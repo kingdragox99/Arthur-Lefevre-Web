@@ -76,10 +76,6 @@ export default defineNuxtConfig({
         lang: 'en',
       },
     },
-    // pageTransition: {
-    //   name: 'page',
-    //   mode: 'out-in',
-    // },
   },
 
   // https://v3.nuxtjs.org/api/configuration/nuxt.config#components
@@ -181,13 +177,13 @@ export default defineNuxtConfig({
   },
 
   // Config Google Font https://google-fonts.nuxtjs.org
-  googleFonts: {
-    families: {
-      Roboto: true,
-      Raleway: {
-        wght: [100, 400],
-        ital: [100],
-      },
-    },
-  },
+  // googleFonts: {
+  //   families: {
+  //     Roboto: true,
+  //     Raleway: {
+  //       wght: [100, 400],
+  //       ital: [100],
+  //     },
+  //   },
+  // },
 });

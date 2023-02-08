@@ -17,10 +17,12 @@ module.exports = {
     },
     extend: {
       colors: {
+        logo: 'var(--logo)',
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
         accent: 'var(--accent)',
         neutral: 'var(--neutral)',
+        other: 'var(--other)',
         background: 'var(--background)',
         info: 'var(--info)',
         success: 'var(--success)',

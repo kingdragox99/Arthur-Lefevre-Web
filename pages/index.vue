@@ -1,6 +1,10 @@
 <template lang="pug">
-Header
-main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
+.w-full.h-full.absolute.z-50.flex.justify-center.items-center.anime-bg.p-10(
+  v-if='loading'
+)
+  Logo.anime-logo
+Header.shadow-lg.mb-4(v-if='loadingEnd')
+main.px-6.py-4.font-inco.xl_px-32.2xl_px-72.2xl_py-8(v-if='loadingEnd')
   section#about.h-auto.w-full.mb-8.flex.flex-col.md_flex-row.justify-center.md_gap-10
     .w-full.md_w-2of3
       h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl {{ $t('pages.home.about.title') }}
@@ -51,8 +55,8 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
           Icon.text-primary(name='ic:baseline-arrow-right')
           p Git & Github
     picture.flex.justify-center.items-center.md_w-1of3
-      img.rounded-3xl.w-52.h-52.xl_w-72.xl_h-72(
-        src='@@/assets/img/me.jpg'
+      img.rounded-3xl.w-52.h-52.shadow-lg.xl_w-72.xl_h-72(
+        src='@@/assets/img/me.webp'
         alt='me'
         width='500'
         height='500'
@@ -110,22 +114,27 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
           li.flex.mb-4.xl_text-xl
             Icon.text-primary(name='ic:baseline-arrow-right' size='1.5rem')
             p.w-4of5 {{ $t('pages.home.experience.desc_6') }}
-  .flex.w-full.py-2.gap-2.mb-8
-    a.btn.btn-sm.xl_btn(href='#experience1' aria-label='go to experience1') Altab
-    a.btn.btn-sm.xl_btn(href='#experience2' aria-label='go to experience2') Becode
-
-  section#projects.h-auto.w-full.mb-8
+    .flex.w-full.py-2.gap-2.mb-8
+      a.btn.btn-sm.hover_text-primary.xl_btn(
+        href='#experience1'
+        aria-label='go to experience1'
+      ) Altab
+      a.btn.btn-sm.hover_text-primary.xl_btn(
+        href='#experience2'
+        aria-label='go to experience2'
+      ) Becode
+  section#projects.h-auto.w-full.mb-8.lg_hidden
     h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl {{ $t('pages.home.projects.title') }}
     .carousel.space-x-4.w-full
       #project1.carousel-item.relative.w-full.flex.flex-col
-        figure.bg-white.rounded-t-3xl.flex.justify-center
+        figure.bg-background.rounded-t-3xl.flex.justify-center
           img.h-64.w-64(
-            src='@@/assets/img/verdin.png'
+            src='@@/assets/img/verdin.webp'
             alt='verdin.be'
             width='500'
             height='500'
           )
-        .card-body.bg-background.rounded-b-3xl
+        .card-body.bg-other.rounded-b-3xl
           a.card-title.font-inco.font-bold.text-xl.text-primary.hover_text-primary.xl_text-3xl(
             href='https://www.verdin.be/'
             target='_blank'
@@ -156,21 +165,24 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             href='#project3'
             aria-label='go to project3'
           )
-            Icon.text-primary(name='ic:outline-arrow-back-ios' size='1rem')
+            Icon.text-secondary(name='ic:outline-arrow-back-ios' size='1rem')
           a.btn.btn-circle.w-8.h-8.xl_btn-lg(
             href='#project2'
             aria-label='go to project2'
           )
-            Icon.text-primary(name='ic:outline-arrow-forward-ios' size='1rem')
+            Icon.text-secondary(
+              name='ic:outline-arrow-forward-ios'
+              size='1rem'
+            )
       #project2.carousel-item.relative.w-full.flex.flex-col
-        figure.bg-white.rounded-t-3xl.flex.justify-center
+        figure.bg-background.rounded-t-3xl.flex.justify-center
           img.h-64.w-64(
-            src='@@/assets/img/jh.png'
+            src='@@/assets/img/jh.webp'
             alt='Joyce Huberty'
             width='500'
             height='500'
           )
-        .card-body.bg-background.rounded-b-3xl
+        .card-body.bg-other.rounded-b-3xl
           a.card-title.font-inco.font-bold.text-xl.text-primary.hover_text-primary.xl_text-3xl(
             href='http://5.196.7.243:3000/'
             target='_blank'
@@ -200,21 +212,24 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             href='#project1'
             aria-label='go to project1'
           )
-            Icon.text-primary(name='ic:outline-arrow-back-ios' size='1rem')
+            Icon.text-secondary(name='ic:outline-arrow-back-ios' size='1rem')
           a.btn.btn-circle.w-8.h-8.xl_btn-lg(
             href='#project3'
             aria-label='go to project3'
           )
-            Icon.text-primary(name='ic:outline-arrow-forward-ios' size='1rem')
+            Icon.text-secondary(
+              name='ic:outline-arrow-forward-ios'
+              size='1rem'
+            )
       #project3.carousel-item.relative.w-full.flex.flex-col
-        figure.bg-white.rounded-t-3xl.flex.justify-center
+        figure.bg-background.rounded-t-3xl.flex.justify-center
           img.h-64.w-64(
-            src='@@/assets/img/BOTDS.png'
+            src='@@/assets/img/BOTDS.webp'
             alt='Vac Ban Checker'
             width='500'
             height='500'
           )
-        .card-body.bg-background.rounded-b-3xl
+        .card-body.bg-other.rounded-b-3xl
           a.card-title.font-inco.font-bold.text-xl.text-primary.hover_text-primary.xl_text-3xl(
             href='https://github.com/kingdragox99/Steam-Ban-Checker-Discord-Bot'
             target='_blank'
@@ -254,37 +269,198 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-96.2xl_py-8
             href='#project2'
             aria-label='go to project2'
           )
-            Icon.text-primary(name='ic:outline-arrow-back-ios' size='1rem')
+            Icon.text-secondary(name='ic:outline-arrow-back-ios' size='1rem')
           a.btn.btn-circle.w-8.h-8.xl_btn-lg(
             href='#project1'
             aria-label='go to project1'
           )
-            Icon.text-primary(name='ic:outline-arrow-forward-ios' size='1rem')
-
+            Icon.text-secondary(
+              name='ic:outline-arrow-forward-ios'
+              size='1rem'
+            )
+  section#projects.h-auto.w-full.mb-8.hidden.lg_block
+    h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl {{ $t('pages.home.projects.title') }}
+    .grid.grid-cols-2.gap-4.w-full
+      .w-full
+        figure.w-full.bg-background.rounded-t-3xl.flex.justify-center
+          img.h-64.w-64(
+            src='@@/assets/img/verdin.webp'
+            alt='verdin.be'
+            width='500'
+            height='500'
+          )
+        .w-full.h-72.card-body.bg-other.rounded-b-3xl
+          a.card-title.font-inco.font-bold.text-xl.text-primary.hover_text-primary.xl_text-3xl(
+            href='https://www.verdin.be/'
+            target='_blank'
+            aria-label='go to verdin.be'
+          ) Verdin.be
+          p.xl_text-lg {{ $t('pages.home.projects.verdin') }}
+          .flex.gap-2.text-white
+            a.flex.group.gap-1.xl_text-lg(
+              href='https://www.verdin.be/'
+              target='_blank'
+              aria-label='go to verdin.be'
+            )
+              Icon.text-primary.group-hover_text-secondary(
+                name='mdi:web-box'
+                size='1.5rem'
+              )
+              p.text-primary.group-hover_text-secondary.hover_underline {{ $t('pages.home.projects.website') }}
+          .card-actions.justify-start
+            .badge.badge-outline Nuxt.js
+            .badge.badge-outline TypeScript
+            .badge.badge-outline Tailwind
+            .badge.badge-outline i18n
+            .badge.badge-outline Vuelidate
+      .w-full
+        figure.w-full.bg-background.rounded-t-3xl.flex.justify-center
+          img.h-64.w-64(
+            src='@@/assets/img/jh.webp'
+            alt='Joyce Huberty'
+            width='500'
+            height='500'
+          )
+        .w-full.h-72.card-body.bg-other.rounded-b-3xl
+          a.card-title.font-inco.font-bold.text-xl.text-primary.hover_text-primary.xl_text-3xl(
+            href='http://5.196.7.243:3000/'
+            target='_blank'
+            aria-label='go to JoyceHuberty.be'
+          ) Joyce Huberty portfolio
+          p.xl_text-lg {{ $t('pages.home.projects.jh') }}
+          .flex.gap-2.text-white
+            a.flex.group.gap-1.xl_text-lg(
+              href='http://5.196.7.243:3000/'
+              target='_blank'
+              aria-label='go to JoyceHuberty.be'
+            )
+              Icon.text-primary.group-hover_text-secondary(
+                name='mdi:web-box'
+                size='1.5rem'
+              )
+              p.text-primary.group-hover_text-secondary.hover_underline {{ $t('pages.home.projects.website') }}
+          .card-actions.justify-start
+            .badge.badge-outline Vue.js
+            .badge.badge-outline MongoDB
+            .badge.badge-outline Express
+            .badge.badge-outline Node.js
+      .w-full
+        figure.w-full.bg-background.rounded-t-3xl.flex.justify-center
+          img.h-64.w-64(
+            src='@@/assets/img/BOTDS.webp'
+            alt='Vac Ban Checker'
+            width='500'
+            height='500'
+          )
+        .w-full.h-72.card-body.bg-other.rounded-b-3xl
+          a.card-title.font-inco.font-bold.text-xl.text-primary.hover_text-primary.xl_text-3xl(
+            href='https://github.com/kingdragox99/Steam-Ban-Checker-Discord-Bot'
+            target='_blank'
+            aria-label='go to github repo'
+          ) Vac Ban Checker Discord Bot
+          p.xl_text-lg {{ $t('pages.home.projects.vbc') }}
+          .flex.gap-2.text-white
+            a.flex.group.gap-1(
+              href='https://github.com/kingdragox99/Steam-Ban-Checker-Discord-Bot'
+              target='_blank'
+              aria-label='go to github repo'
+            )
+              Icon.text-primary.group-hover_text-secondary(
+                name='mdi:web-box'
+                size='1.5rem'
+              )
+              p.text-primary.group-hover_text-secondary.hover_underline.xl_text-lg {{ $t('pages.home.projects.website') }}
+            a.flex.group.gap-1(
+              href='https://github.com/kingdragox99/Steam-Ban-Checker-Discord-Bot'
+              target='_blank'
+              aria-label='go to github repo'
+            )
+              Icon.text-primary.group-hover_text-secondary(
+                name='mdi:github-box'
+                size='1.5rem'
+              )
+              p.text-primary.group-hover_text-secondary.hover_underline.xl_text-lg Github
+          .card-actions.justify-start
+            .badge.badge-outline Discord.js
+            .badge.badge-outline Cheerio.js
+            .badge.badge-outline MongoDB
+            .badge.badge-outline Node.js
   section#contact.h-auto.w-full.mb-8
     h1.font-noto.font-bold.text-xl.text-primary.mb-4.xl_text-3xl {{ $t('pages.home.contact.title') }}
     p.mb-4.xl_text-xl {{ $t('pages.home.contact.desc') }}
     .flex.flex-col.w-full.border-opacity-50
       .grid.grid-cols-2.card.place-items-center.mb-2.xl_grid-cols-4
         img.w-32.lg_w-64.xl_col-start-2(
-          src='@@/assets/img/malt.png'
+          src='@@/assets/img/malt.webp'
           alt='malt.com'
           height='400'
           width='400'
         )
-        a.btn.xl_col-start-3.xl_text-xl(
+        a.btn.hover_text-primary.xl_col-start-3.xl_text-xl(
           href='https://www.malt.fr/profile/arthurlefevre1'
           target='_blank'
           aria-label='go to malt.com'
         ) {{ $t('pages.home.contact.btn_1') }}
       .grid.card
-        a.btn.lg_btn.xl_text-xl(
+        a.btn.hover_text-primary.lg_btn.xl_text-xl(
           href='mailto:arthur.lefevre.dev@gmail.com'
           aria-label='send me a email'
         ) Email
-Footer.font-inco.bg-background
+Footer.font-inco.bg-other(v-if='loadingEnd')
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue';
+import Logo from '@@/assets/svg/logo-w.svg';
+const loading = ref(true);
+const loadingEnd = ref(false);
 
-<style scoped></style>
+const intro = () => {
+  loading.value = false;
+  loadingEnd.value = true;
+};
+
+setTimeout(() => {
+  intro();
+}, 4000);
+</script>
+
+<style scoped>
+.anime-bg {
+  background-color: black;
+  animation-name: bg-anime;
+  animation-duration: 5s;
+}
+
+.anime-logo {
+  fill: white;
+  animation-name: logo-anime;
+  animation-duration: 5s;
+}
+
+@keyframes bg-anime {
+  0% {
+    background-color: rgb(255, 255, 255);
+  }
+  50% {
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes logo-anime {
+  0% {
+    fill: rgb(0, 0, 0);
+  }
+  60% {
+    fill: rgb(255, 255, 255);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>
