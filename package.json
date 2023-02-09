@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.4.0",
-    "@headlessui/vue": "^1.7.7",
+    "@headlessui/vue": "^1.7.9",
     "@nuxt/content": "^2.3.0",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
