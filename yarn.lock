@@ -9524,6 +9524,11 @@ vue-router@^4.1.6:
   dependencies:
     "@vue/devtools-api" "^6.4.5"
 
+vue-window-size@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/vue-window-size/-/vue-window-size-2.0.0.tgz#8074c29dec269a7d277f0a761f138d2200189449"
+  integrity sha512-Bx3O7gC71wWSfoY7XMHY4+sP1YKmXGaWkMtpSLy8JlItr1VVp5US65KPIyOSyZMZD1gcr0abaFuiQy+zL45q8A==
+
 vue@^3.2.47:
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.47.tgz#3eb736cbc606fc87038dbba6a154707c8a34cff0"

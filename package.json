@@ -73,6 +73,7 @@
     "vite-svg-loader": "^4.0.0"
   },
   "dependencies": {
-    "daisyui": "^2.50.0"
+    "daisyui": "^2.50.0",
+    "vue-window-size": "^2.0.0"
   }
 }
