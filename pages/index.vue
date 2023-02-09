@@ -141,7 +141,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-72.2xl_py-8(v-if='loadingEnd')
             height='300'
           )
         .w-full.card-body.bg-other.rounded-b-3xl.object-cover
-          h3.card-title.font-inco.font-bold.text-xl.text-primary.xl_text-3xl(
+          h4.card-title.font-inco.font-bold.text-xl.text-primary.xl_text-3xl(
             href='https://www.verdin.be/'
             target='_blank'
             aria-label='go to verdin.be'
@@ -173,7 +173,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-72.2xl_py-8(v-if='loadingEnd')
             height='300'
           )
         .w-full.card-body.bg-other.rounded-b-3xl.object-cover
-          h3.card-title.font-inco.font-bold.text-xl.text-primary.xl_text-3xl(
+          h4.card-title.font-inco.font-bold.text-xl.text-primary.xl_text-3xl(
             href='http://5.196.7.243:3000/'
             target='_blank'
             aria-label='go to JoyceHuberty.be'
@@ -204,7 +204,7 @@ main.px-6.py-4.font-inco.xl_px-32.2xl_px-72.2xl_py-8(v-if='loadingEnd')
             height='300'
           )
         .w-full.card-body.bg-other.rounded-b-3xl.object-cover
-          h3.card-title.font-inco.font-bold.text-xl.text-primary.xl_text-3xl(
+          h4.card-title.font-inco.font-bold.text-xl.text-primary.xl_text-3xl(
             href='https://github.com/kingdragox99/Steam-Ban-Checker-Discord-Bot'
             target='_blank'
             aria-label='go to github repo'
