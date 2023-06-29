@@ -26,13 +26,11 @@
             )
               DialogPanel.pointer-events-auto.w-screen.max-w-md
                 .flex.h-full.flex-col.bg-other.p-4.shadow-xl
-                  .grid.grid-cols-3.place-items-end
-                    Logo.fill-logo.col-span-2
-                    a.btn.btn-circle.self-center(
-                      aria-label='close menu'
-                      @click='handleClose'
-                    )
-                      Cross.w-1of2
+                  a.btn.btn-circle.col-span-1(
+                    aria-label='close menu'
+                    @click='handleClose'
+                  )
+                    Cross.w-1of2
                   nav.mt-4
                     ul
                       li.mb-4

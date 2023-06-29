@@ -110,6 +110,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-icon',
     'nuxt-simple-sitemap',
+    'nuxt-swiper',
   ],
 
   // vite config https://v3.nuxtjs.org/api/configuration/nuxt-config#vite
